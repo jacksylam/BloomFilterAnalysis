@@ -11,8 +11,7 @@ public class Main {
 		// false positive.
 
 		Experiment experiment1 = new Experiment();
-
-//		
+	
 		experiment1.compareTimeForIntersectionLeastFirstOptimize("batman", "analysi");
 		experiment1.compareTimeForIntersectionLeastFirstOptimize("roo", "rob");
 		experiment1.compareTimeForIntersectionLeastFirstOptimize("fawn", "circuitri");

@@ -15,8 +15,6 @@ public class Term implements Comparable<Term>{
 
 	private String word;
 	private ArrayList<Posting> postingList = new ArrayList<Posting>();
-	//private BitSet bitArray = new BitSet(45000);
-	//private BitSet bloomFilter = new BitSet(45000);
 	private BitSet bloomFilter = new BitSet();
 	private BitSet bitArray = new BitSet();
 
@@ -91,15 +89,6 @@ public class Term implements Comparable<Term>{
 		
 	}
 	
-
-	
-//	public boolean compareBloomFilter(int docID){
-//		JenkinsHash jenkinsHash = new JenkinsHash();
-//		BigInteger bigInt = BigInteger.valueOf(docID);
-//		System.out.print( bloomFilter.get((int) jenkinsHash.hash(bigInt.toByteArray())));
-//		return bloomFilter.get((int) jenkinsHash.hash(bigInt.toByteArray()));
-//		
-//	}
 	
 	public String getWord() {
 		return word;
